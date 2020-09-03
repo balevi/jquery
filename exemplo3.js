@@ -1,7 +1,7 @@
 $(function(){
 
-    $('img').error(function(){
-        $('img').attr("src","img/negativo.jpg");
+    $('img').on("error",function(){
+        $(this).attr("src","img/negativo.jpg");
 
     });
 });
