@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type ="text/javascript">
+        $(document).ready(function(){
+            $('.div1 span').hide().delay('1000').fadeIn(1000).css("color","blue")
+            //chamando um filho direto de um elemento
+            $('.div1 > span').css({color:'red'});
+        });
+
+    </script>
+    <body>
+        <div class="div1">
+            <h2>h2 filho da div</h2>
+            <p>h2  filho da div <span> filho do p</span></p>
+            <span>span direta</span>
+        </div>
+        <h2>p1 fora da div</h2>
+        <p class="p1">fora da div</p>
+        <p> p2 fora da div</p>
+        <p> p3 fora da div</p>
+    </body>
+
+</html>

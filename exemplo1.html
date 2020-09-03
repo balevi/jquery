@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type ="text/javascript">
+        $(document).ready(function(){
+            //alert('dom carregado!!!');
+            //$('h1').css("color","orange");
+            //$('h1').text(" mudou nome");
+            $('h1')
+            .css("color","orange")
+            .text(" mudou nome2")
+            .click(function(){
+                $('body').css("background","red")
+            });
+            $('.primeira').css("font-size","100px")
+            $('#segundo').css("background","pink")
+        });
+
+    </script>
+    <body>
+        <h1>ola mundo!!!</h1>
+        <a href="#">hellou</a>
+        <a href="#" class="primeira">hellou</a>
+        <a href="#" id="segundo">hellou</a>
+    </body>
+
+</html>
